@@ -1,0 +1,10 @@
+{
+  "name": "WordPress Dev Container",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "wordpress",
+  "workspaceFolder": "/workspace",
+  "extensions": ["ms-vscode-remote.remote-containers"],
+  "forwardPorts": [80],
+  "postCreateCommand": "docker-compose up -d",
+  "shutdownAction": "stopCompose"
+}
